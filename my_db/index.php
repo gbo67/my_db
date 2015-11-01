@@ -5,7 +5,7 @@ require_once "php/constants.php";
 $db = new MySQL();
 $db->connectDB();
 
-$ladies = $db->getMembers("sex", "male");
+$ladies = $db->getMembers("sex", "female");
 echo $ladies[0];
 
 ?>
